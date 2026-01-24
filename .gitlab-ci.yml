@@ -22,3 +22,5 @@ deploy-site:
   pages: true
   script:
     - echo "Deploying site"
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
