@@ -1,13 +1,13 @@
 :root {
   --text-color: #f5f5f7;
   --background-color: #1d1d1f;
-  --container-padding: 25px;
+  --container-padding: 50px;
 }
 
 html {
   background-color: var(--background-color);
   color: var(--text-color);
-  max-width: 650px;
+  max-width: 700px;
   margin: auto;
   font-family: "Ubuntu Sans", sans-serif;
 }
@@ -43,7 +43,7 @@ hr {
 }
 
 header {
-  padding: 10px var(--container-padding);
+  padding: 10px 30px;
   border-bottom: 1px solid #555;
   display: flex;
   justify-content: space-between;
