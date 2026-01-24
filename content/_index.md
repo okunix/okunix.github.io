@@ -8,4 +8,8 @@ build.render = false
 build.list = true
 +++
 
-Software Engineer and Linux enthusiast
+# 👋 Hi, I’m **Yusuf**
+
+I’m a **software engineer** and **Linux enthusiast**.
+
+Here, I occasionally write about some stuff that i find interesting.
