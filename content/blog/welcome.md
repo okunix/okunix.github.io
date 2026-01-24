@@ -5,11 +5,4 @@ author = [ "Yusuf Yakubov" ]
 tags = [ "meta" ]
 +++
 
-first post here
-
-```toml
-example = "code"
-
-[where]
-here = true
-```
+Welcome to my blog! I hope I'll post something here ocasionally.
