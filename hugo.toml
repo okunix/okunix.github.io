@@ -1,8 +1,12 @@
 baseURL = 'https://cr78.gitlab.io/'
 languageCode = 'en-us'
-title = "Yusuf's Site"
+title = "cr78"
 
 [menus]
+  [[ menus.main ]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 5
   [[ menus.main ]]
   name = 'About'
   pageRef = '/about/'
@@ -12,6 +16,16 @@ title = "Yusuf's Site"
   pageRef = '/blog/'
   weight = 20
   [[ menus.main ]]
-  name = 'RSS'
-  pageRef = '/index.xml'
+  name = 'Feed'
+  pageRef = '/blog/index.xml'
   weight = 30
+
+[outputs]
+  home = ['html']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+
+[services]
+  [services.rss]
+    limit = 20

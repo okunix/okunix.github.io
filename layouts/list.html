@@ -1,6 +1,6 @@
 {{- define "page" }} 
 
-<h1>{{ .Title }}</h1>
+<h1>{{ if eq .Kind "term" }}Tag - {{ end }}{{ .Title }}</h1>
 
 {{ .Content }}
 
