@@ -2,13 +2,13 @@
 <article>
   <h1>{{ .Title }}</h1>
   <div class="metadata">
+    <time>{{ .Date.Format "2006 January 2 15:04" }}</time>
     {{ if .Params.author }}
     <p>Author: {{ delimit .Params.author ", " }}</p>
     {{ end }}
     {{ if .Params.tags }}
     <p>Tags: {{ range .Params.tags }}<a href="/tags/{{ . }}">#{{ . }}</a>{{ end }}</p>
     {{ end }}
-    <time>Created: {{ .Date.Format "2006 January 2 15:04" }}</time>
   </div>
   <hr />
   <p>{{ .Content }}</p>

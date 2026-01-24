@@ -1,6 +1,6 @@
 :root {
-  --text-color: #1d1d1f;
-  --background-color: #f5f5f7;
+  --text-color: #f5f5f7;
+  --background-color: #1d1d1f;
   --container-padding: 25px;
 }
 
@@ -23,6 +23,11 @@ html {
     Segoe UI Symbol;
 }
 
+a {
+  color: #6699cc;
+  text-decoration-thickness: 1px;
+}
+
 #site-title {
   font-size: 20px;
   font-weight: bold;
@@ -35,12 +40,12 @@ html {
 
 hr {
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #555;
 }
 
 header {
   padding: 10px var(--container-padding);
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #555;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,7 +64,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #555;
+  color: #ccc;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
@@ -69,12 +74,12 @@ header nav a:hover {
 }
 
 #pages-list a {
-  text-decoration: none;
+  /*text-decoration: none;*/
   color: var(--text-color);
 }
 
 #pages-list a:hover {
-  color: #555;
+  color: #ccc;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
@@ -84,7 +89,7 @@ header nav a:hover {
 }
 
 .metadata {
-  color: #333;
+  color: #ccc;
 }
 
 pre {
