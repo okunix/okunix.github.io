@@ -1,0 +1,74 @@
+:root {
+  --text-color: #1d1d1f;
+  --background-color: #f5f5f7;
+}
+
+html {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  max-width: 650px;
+  margin: auto;
+  font-family:
+    Iowan Old Style,
+    Apple Garamond,
+    Baskerville,
+    Times New Roman,
+    Droid Serif,
+    Times,
+    Source Serif Pro,
+    serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+
+#site-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#site-title a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+header {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+header nav a:hover {
+  color: #555;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+#pages-list {
+  list-style-type: none;
+}
+
+#pages-list a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+#pages-list a:hover {
+  color: #555;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}

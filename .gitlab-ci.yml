@@ -1,0 +1,22 @@
+default:
+  image: hugomods/hugo:latest
+  tags:
+    - gitlab-org
+
+stages:
+  - build
+  - deploy
+
+build-site:
+  stage: build
+  artifacts:
+    paths:
+      - public/
+  script:
+    - hugo --minify
+
+deploy-site:
+  stage: deploy
+  dependencies:
+    - build-site
+  pages: true

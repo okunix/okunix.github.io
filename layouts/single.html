@@ -1,0 +1,5 @@
+{{ define "page" }}
+<h1>{{ .Title }}</h1>
+<time>Created: {{ .Date.Format "2006 January 2 15:04" }}</time>
+<p>{{ .Content }}</p>
+{{ end }}
