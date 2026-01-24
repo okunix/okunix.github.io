@@ -1,4 +1,4 @@
-{{- define "page" }} 
+{{- define "page" }}
 
 <h1>{{ if eq .Kind "term" }}Tag - {{ end }}{{ .Title }}</h1>
 
@@ -6,7 +6,9 @@
 
 <ul id="pages-list">
   {{ range .Pages }}
-  <li>{{ .Date.Format "02 Jan 2006" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  <li>
+    {{ .Date.Format "January 02, 2006" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
   {{ end }}
 </ul>
 

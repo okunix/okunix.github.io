@@ -1,10 +1,12 @@
 {{ define "page" }}
 <article>
-  <time>{{ .Date.Format "2006 January 2 15:04" }}</time><br />
+  {{ if .Date }}
+  <time>{{ .Date.Format "Monday, 2 January 2006 15:04" }}</time><br />
+  {{ end }}
   <h1>{{ .Title }}</h1>
   <div class="metadata">
-    {{ if .Params.author }}
-    <span>Author: {{ delimit .Params.author ", " }}</span><br />
+    {{ if .Params.authors }}
+    <span>Author: {{ delimit .Params.authors ", " }}</span><br />
     {{ end }} {{ if .Params.tags }}
     <span>Tags: {{ range .Params.tags }}<a href="/tags/{{ . }}">#{{ . }}</a> {{ end
       }}</span>
