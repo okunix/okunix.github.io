@@ -1,6 +1,6 @@
 baseURL = 'https://cr78.gitlab.io/'
 languageCode = 'en-us'
-title = "cr78"
+title = "yusuf's site"
 
 [menus]
   [[ menus.main ]]

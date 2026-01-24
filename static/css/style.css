@@ -9,23 +9,18 @@ html {
   color: var(--text-color);
   max-width: 650px;
   margin: auto;
-  font-family:
-    Iowan Old Style,
-    Apple Garamond,
-    Baskerville,
-    Times New Roman,
-    Droid Serif,
-    Times,
-    Source Serif Pro,
-    serif,
-    Apple Color Emoji,
-    Segoe UI Emoji,
-    Segoe UI Symbol;
+  font-family: "Ubuntu Sans", sans-serif;
 }
 
 a {
   color: #6699cc;
   text-decoration-thickness: 1px;
+}
+
+#site-icon {
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 15px;
 }
 
 #site-title {
@@ -36,6 +31,10 @@ a {
 #site-title a {
   color: var(--text-color);
   text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 hr {

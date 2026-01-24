@@ -1,5 +1,5 @@
 <header>
-  <span id="site-title"><a href="/">{{ .Site.Title }}</a></span>
+  <span id="site-title"><a href="/"><img src="/pictures/icon.webp" id="site-icon" alt="icon"><span>{{ .Site.Title }}</span></a></span>
   <nav>
     {{ range .Site.Menus.main }}
     <a href="{{ .PageRef }}">{{ .Name }}</a>

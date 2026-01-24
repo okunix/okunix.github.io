@@ -7,7 +7,7 @@
     <p>Author: {{ delimit .Params.author ", " }}</p>
     {{ end }}
     {{ if .Params.tags }}
-    <p>Tags: {{ range .Params.tags }}<a href="/tags/{{ . }}">#{{ . }}</a>{{ end }}</p>
+    <p>Tags: {{ range .Params.tags }}<a href="/tags/{{ . }}">#{{ . }}</a> {{ end }}</p>
     {{ end }}
   </div>
   <hr />
