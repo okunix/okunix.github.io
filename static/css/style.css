@@ -109,6 +109,9 @@ pre {
   font-size: 12px;
   padding: 7px;
   border-radius: 5px;
+  overflow-y: auto;
+  overflow-x: auto;
+  white-space: pre;
 }
 
 main {
