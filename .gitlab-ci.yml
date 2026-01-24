@@ -20,3 +20,5 @@ deploy-site:
   dependencies:
     - build-site
   pages: true
+  script:
+    - echo "Deploying site"
