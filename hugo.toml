@@ -29,3 +29,7 @@ title = "yusuf's site"
 [services]
   [services.rss]
     limit = 20
+
+[markup]
+  [markup.highlight]
+    style = 'nordic'

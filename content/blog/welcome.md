@@ -6,3 +6,17 @@ tags = [ "meta" ]
 +++
 
 Welcome to my blog! I hope I'll post something here ocasionally.
+
+```txt
+$ fortune | cowsay
+ ________________________________________
+/ Sometimes I simply feel that the whole \
+| world is a cigarette and I'm the only  |
+\ ashtray.                               /
+ ----------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```

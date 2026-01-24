@@ -105,14 +105,7 @@ header nav a:hover {
 }
 
 pre {
-  font-family:
-    Menlo,
-    Consolas,
-    Monaco,
-    Adwaita Mono,
-    Liberation Mono,
-    Lucida Console,
-    monospace;
+  font-family: monospace;
   font-size: 12px;
   padding: 7px;
   border-radius: 5px;
