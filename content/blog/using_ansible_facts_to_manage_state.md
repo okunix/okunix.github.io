@@ -1,7 +1,7 @@
 +++
 date = '2026-01-25T00:35:54+03:00'
 draft = false 
-title = 'Using ansible local facts to make ansible more declarative'
+title = 'Using ansible local facts to make your playbooks more declarative'
 tags = [ "devops", "ansible", "linux" ]
 authors = [ "Yusuf Yakubov" ]
 +++
