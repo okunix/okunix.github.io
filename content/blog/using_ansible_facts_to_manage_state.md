@@ -8,6 +8,8 @@ authors = [ "Yusuf Yakubov" ]
 
 Sometimes you need to declaratively manage packages on your target system but absense of state in ansible makes it inconvinient
 
+For example you want a certain variable/list to represent a set of installed packages on your system, but when you remove package from the list it still is present on your target machine
+
 Here is the simple pattern based on **ansible_local facts** that i found on the internet that may help you
 
 Basically it holds state information in a file **`/etc/ansible/facts.d/*.fact`** in a json/ini format and to reference it u can use **`{{ ansible_local.* }}`**
