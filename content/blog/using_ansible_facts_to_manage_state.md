@@ -12,7 +12,7 @@ For example you want a certain variable/list to represent a set of installed pac
 
 Here is the simple pattern based on **ansible_local facts** that i found on the internet that may help you
 
-Basically it holds state information in a file **`/etc/ansible/facts.d/*.fact`** in a json/ini format and to reference it u can use **`{{ ansible_local.* }}`**
+Basically it holds state information in a file **`/etc/ansible/facts.d/*.fact`** on your target machine in a json/ini format and to reference it u can use **`{{ ansible_local.* }}`**
 
 In this example we manage package creation but you can adapt it to yout own needs like maybe managing ssh authorized_keys file, etc.
 
