@@ -1,13 +1,7 @@
-{{- define "page" }}
-{{ .Content }}
-{{ $latest_posts := where .Site.RegularPages "Section" "blog" | first 5 }}
-<h3>Latest Posts</h3>
-<ul id="pages-list">
-  {{ range $latest_posts }}
-  <li>
-    {{ .Date.Format "02 Jan 2006" }} -
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </li>
-  {{ end }}
-</ul>
+{{- define "page" }} {{ .Content }} {{ $latest_posts := where .Site.RegularPages
+"Section" "blog" | first 5 }}
+<h2>Latest Posts</h2>
+{{ range $latest_posts }} 
+{{ .Date.Format "02 Jan 2006" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a><br />
+{{ end }} 
 {{- end }}
