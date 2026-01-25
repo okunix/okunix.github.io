@@ -106,7 +106,7 @@ header nav a:hover {
 
 pre {
   font-family: monospace;
-  font-size: 12px;
+  font-size: 12px !important;
   padding: 7px;
   border-radius: 5px;
   overflow-y: auto;
