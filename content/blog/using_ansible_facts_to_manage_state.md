@@ -1,7 +1,7 @@
 +++
 date = '2026-01-25T00:35:54+03:00'
 draft = false 
-title = 'Using Ansible facts to manage state'
+title = 'Using ansible local facts to make ansible more declarative'
 tags = [ "devops", "ansible", "linux" ]
 authors = [ "Yusuf Yakubov" ]
 +++
