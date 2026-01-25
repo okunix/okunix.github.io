@@ -43,7 +43,7 @@ In this example we manage package creation but you can adapt it to yout own need
     mode: "0644"
 
 - name: Adding current state to packages.fact
-  ansible.builtin.copy:
+  copy:
     content: "{{ packages_to_install | to_json }}"
     dest: /etc/ansible/facts.d/packages.fact
     owner: root
