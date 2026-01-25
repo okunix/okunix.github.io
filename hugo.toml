@@ -8,12 +8,12 @@ title = "yusuf's site"
   pageRef = '/'
   weight = 5
   [[ menus.main ]]
-  name = 'About'
-  pageRef = '/about/'
-  weight = 10
-  [[ menus.main ]]
   name = 'Blog'
   pageRef = '/blog/'
+  weight = 10
+  [[ menus.main ]]
+  name = 'About'
+  pageRef = '/about/'
   weight = 20
   [[ menus.main ]]
   name = 'Feed'
