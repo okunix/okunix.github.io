@@ -13,7 +13,7 @@ build-site:
     paths:
       - public/
   script:
-    - hugo --minify
+    - hugo --minify --baseURL $CI_PAGES_URL
 
 deploy-site:
   stage: deploy
