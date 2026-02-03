@@ -46,4 +46,4 @@ jobs:
     steps:
       - name: Downloading static site artifact
         id: deployment
-        uses: actions/download-artifact@v7
+        uses: actions/deploy-pages@v4
