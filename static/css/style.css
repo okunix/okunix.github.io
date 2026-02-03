@@ -226,3 +226,16 @@ h6 {
   flex-direction: column;
   margin: 15px 0;
 }
+
+.card #blog-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11pt;
+}
+
+.card #blog-meta #tags {
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+}

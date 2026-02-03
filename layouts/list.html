@@ -2,14 +2,17 @@
 
 <h1>{{ if eq .Kind "term" }}Tag - {{ end }}{{ .Title }}</h1>
 
-{{ .Content }} 
+{{ .Content }}
 
 <div class="card-list">
-{{ range .Pages }}
-<div class="card">
-  <a href="{{ .RelPermalink }}" class="card-title">{{ .Title }}</a>
-  {{ .Date.Format "02 Jan 2006" }}
-</div>
-{{ end }} 
+  {{ range .Pages }}
+  <div class="card">
+    <a href="{{ .RelPermalink }}" class="card-title">{{ .Title }}</a>
+    <div id="blog-meta">
+      <span>{{ .Date.Format "02 Jan 2006" }}</span>
+      <span id="tags">{{ range .Params.tags }}<a href="/tags/{{.}}">#{{.}}</a>{{end}}</span>
+    </div>
+  </div>
+  {{ end }}
 </div>
 {{- end }}

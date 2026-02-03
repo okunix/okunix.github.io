@@ -9,7 +9,10 @@
   {{ range $latest_posts }}
   <div class="card">
     <a href="{{ .RelPermalink }}" class="card-title">{{ .Title }}</a>
-    {{ .Date.Format "02 Jan 2006" }}
+    <div id="blog-meta">
+      <span>{{ .Date.Format "02 Jan 2006" }}</span>
+      <span id="tags">{{ range .Params.tags }}<a href="/tags/{{.}}">#{{.}}</a>{{end}}</span>
+    </div>
   </div>
   {{ end }}
 </div>
