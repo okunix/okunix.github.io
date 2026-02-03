@@ -8,10 +8,10 @@ build.render = false
 build.list = true
 +++
 
-# 👋 Hi, I’m **Yusuf**
+# Hi, I’m **Yusuf**
 
 I’m a **software engineer** and **Linux enthusiast**.
 
-Here, I occasionally write about some stuff that i find interesting.
+Here, I occasionally write about some stuff that I find interesting.
 
-[Contact email](mailto:yosa12978@gmail.com?subject=Contact)
+[yosa12978 at gmail.com](mailto:yosa12978@gmail.com?subject=Contact)

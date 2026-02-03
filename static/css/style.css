@@ -139,6 +139,20 @@ footer {
   header {
     padding: 10px 10px;
   }
+
+  #personal_card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #personal_card img {
+    margin: 0 auto;
+    max-height: 3rem;
+    max-width: 3rem;
+  }
 }
 
 p {
@@ -178,13 +192,17 @@ h6 {
 #personal_card {
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  gap: 20px;
+  align-items: center;
 }
 
 #personal_card>img {
   border-radius: 50%;
   height: 100%;
   width: auto;
+  max-height: 10rem;
+  max-width: 10rem;
+  border: 5px solid #565f89;
 }
 
 .card .card-title {
@@ -206,4 +224,5 @@ h6 {
   gap: 15px;
   display: flex;
   flex-direction: column;
+  margin: 15px 0;
 }
