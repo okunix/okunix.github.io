@@ -44,6 +44,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Downloading static site artifact
+      - name: Deploying static site
         id: deployment
         uses: actions/deploy-pages@v4
