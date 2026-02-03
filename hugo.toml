@@ -32,4 +32,4 @@ title = "yusuf's site"
 
 [markup]
   [markup.highlight]
-    style = 'nordic'
+    style = 'tokyonight-moon'

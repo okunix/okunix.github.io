@@ -1,7 +1,19 @@
-{{- define "page" }} {{ .Content }} {{ $latest_posts := where .Site.RegularPages
-"Section" "blog" | first 5 }}
+{{- define "page" }}
+<div id="personal_card">
+  <div id="personal_card_body">{{ .Content }}</div>
+  <img
+    src="https://gitlab.com/uploads/-/system/user/avatar/24828786/avatar.png"
+    alt="picture of me"
+  />
+</div>
+{{ $latest_posts := where .Site.RegularPages "Section" "blog" | first 5 }}
 <h2>Latest Posts</h2>
-{{ range $latest_posts }} 
-{{ .Date.Format "02 Jan 2006" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a><br />
+<div class="card-list">
+{{ range $latest_posts }}
+<div class="card">
+  <a href="{{ .RelPermalink }}" class="card-title">{{ .Title }}</a>
+  {{ .Date.Format "02 Jan 2006" }}
+</div>
 {{ end }} 
+</div>
 {{- end }}

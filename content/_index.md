@@ -13,3 +13,5 @@ build.list = true
 I’m a **software engineer** and **Linux enthusiast**.
 
 Here, I occasionally write about some stuff that i find interesting.
+
+[Contact email](mailto:yosa12978@gmail.com?subject=Contact)
