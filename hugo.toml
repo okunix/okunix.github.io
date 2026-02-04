@@ -6,23 +6,23 @@ title = "okunix"
   [[ menus.main ]]
   name = 'Home'
   pageRef = '/'
-  weight = 5
+  weight = 10
   [[ menus.main ]]
   name = 'Blog'
   pageRef = '/blog/'
-  weight = 10
+  weight = 20
   [[ menus.main ]]
   name = 'About'
   pageRef = '/about/'
-  weight = 20
+  weight = 30
   [[ menus.main ]]
   name = 'Feed'
-  pageRef = '/blog/index.xml'
-  weight = 30
+  pageRef = '/index.xml'
+  weight = 40
 
 [outputs]
-  home = ['html']
-  section = ['html', 'rss']
+  home = ['html', 'rss']
+  section = ['html']
   taxonomy = ['html']
   term = ['html']
 
