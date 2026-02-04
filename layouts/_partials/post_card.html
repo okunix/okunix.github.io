@@ -1,0 +1,7 @@
+<div class="card">
+  <a href="{{ .RelPermalink }}" class="card-title">{{ .Title }}</a>
+  <div id="blog-meta">
+    <span>{{ .Date.Format "02 Jan 2006" }}</span>
+    <span id="tags">{{ range .Params.tags }}<a href="/tags/{{.}}">#{{.}}</a>{{end}}</span>
+  </div>
+</div>

@@ -2,17 +2,7 @@
 <div id="personal_card">
   <div id="personal_card_body">{{ .Content }}</div>
 </div>
-{{ $latest_posts := where .Site.RegularPages "Section" "blog" | first 5 }}
 <h2>Latest Posts</h2>
-<div class="card-list">
-  {{ range $latest_posts }}
-  <div class="card">
-    <a href="{{ .RelPermalink }}" class="card-title">{{ .Title }}</a>
-    <div id="blog-meta">
-      <span>{{ .Date.Format "02 Jan 2006" }}</span>
-      <span id="tags">{{ range .Params.tags }}<a href="/tags/{{.}}">#{{.}}</a>{{end}}</span>
-    </div>
-  </div>
-  {{ end }}
-</div>
+{{- $latest_posts := where .Site.RegularPages "Section" "blog" | first 5 -}}
+{{ partial "posts_list.html" $latest_posts }}
 {{- end }}
