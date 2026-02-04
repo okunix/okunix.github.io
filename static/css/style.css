@@ -15,7 +15,21 @@ html {
   max-width: 700px;
   margin: 0 auto;
   padding: 0;
-  font-family: sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    Adwaita Sans,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    helvetica,
+    arial,
+    sans-serif;
   line-height: 1.5;
 }
 
@@ -78,7 +92,6 @@ header nav {
 header nav a {
   text-decoration: none;
   color: var(--text-hl);
-  font-weight: bold;
 }
 
 header nav a:hover {
