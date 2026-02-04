@@ -1,7 +1,6 @@
-{{- define "page" }} {{- $icon := resources.Get "/images/icon.webp" }}
+{{- define "page" }}
 <div id="personal_card">
   <div id="personal_card_body">{{ .Content }}</div>
-  <!--<img src="{{ $icon.RelPermalink }}" alt="picture of me" />-->
 </div>
 {{ $latest_posts := where .Site.RegularPages "Section" "blog" | first 5 }}
 <h2>Latest Posts</h2>

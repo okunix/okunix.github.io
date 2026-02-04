@@ -7,9 +7,9 @@
   <div class="metadata">
     {{ if .Params.authors }}
     <span>Author: {{ delimit .Params.authors ", " }}</span><br />
-    {{ end }} {{ if .Params.tags }}
-    <span>Tags: {{ range .Params.tags }}<a href="/tags/{{ . }}">#{{ . }}</a> {{ end
-      }}</span>
+    {{ end }}
+    {{ if .Params.tags }}
+    <span>Tags: {{ range .Params.tags }}<a href="/tags/{{ . }}">#{{ . }}</a> {{ end }}</span>
     <br />
     {{ end }}
   </div>
