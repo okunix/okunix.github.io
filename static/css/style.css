@@ -1,6 +1,11 @@
 :root {
   --text-color: #c0caf5;
-  --background-color: #1a1b26;
+  --text-hl: #e6e7ed;
+  --text-dimmed: #9aa5ce;
+  --background-color: #15161e;
+  --background-secondary: #565f89;
+  --card-background: #24283b;
+  --accent: #7aa2f7;
   --container-padding: 50px;
 }
 
@@ -10,7 +15,7 @@ html {
   max-width: 700px;
   margin: 0 auto;
   padding: 0;
-  font-family: "Ubuntu Sans", sans-serif;
+  font-family: sans-serif;
   line-height: 1.5;
 }
 
@@ -26,7 +31,7 @@ main {
 }
 
 a {
-  color: #7aa2f7;
+  color: var(--accent);
   text-decoration-thickness: 1px;
 }
 
@@ -42,7 +47,7 @@ a {
 }
 
 #site-title a {
-  color: var(--text-color);
+  color: var(--text-hl);
   text-decoration: none;
   align-items: center;
   display: flex;
@@ -52,12 +57,12 @@ a {
 
 hr {
   border: 0;
-  border-top: 1px solid #565f89;
+  border-top: 1px solid var(--background-secondary);
 }
 
 header {
   padding: 10px 30px;
-  border-bottom: 1px solid #565f89;
+  border-bottom: 1px solid var(--background-secondary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,26 +77,11 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-hl);
+  font-weight: bold;
 }
 
 header nav a:hover {
-  color: #9aa5ce;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
-
-#pages-list {
-  list-style-type: none;
-}
-
-#pages-list a {
-  /*text-decoration: none;*/
-  color: var(--text-color);
-}
-
-#pages-list a:hover {
-  color: #9aa5ce;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
@@ -101,7 +91,7 @@ header nav a:hover {
 }
 
 .metadata {
-  color: #9aa5ce;
+  color: var(--text-dimmed);
 }
 
 pre {
@@ -124,7 +114,7 @@ main {
 footer {
   padding: 10px 30px;
   margin: 0;
-  border-top: 1px solid #565f89;
+  border-top: 1px solid var(--background-secondary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -155,12 +145,8 @@ footer {
   }
 }
 
-p {
-  text-align: justify;
-}
-
 p code {
-  background-color: #24283b;
+  background-color: var(--card-background);
   padding: 2px 4px;
   border-radius: 4px;
 }
@@ -189,6 +175,15 @@ h6 {
   font-size: 0.875rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-hl);
+}
+
 #personal_card {
   display: flex;
   justify-content: space-between;
@@ -202,22 +197,22 @@ h6 {
   width: auto;
   max-height: 10rem;
   max-width: 10rem;
-  border: 5px solid #565f89;
+  border: 1px solid var(--background-secondary);
 }
 
 .card .card-title {
   text-decoration: none;
   font-weight: bold;
-  color: var(--text-color);
   display: block;
   font-size: 14pt;
+  color: var(--text-hl);
 }
 
 .card {
-  border: 1px solid #565f89;
+  border: 1px solid var(--background-secondary);
   border-radius: 10px;
   padding: 10px;
-  background-color: #24283b;
+  background-color: var(--card-background);
 }
 
 .card-list {

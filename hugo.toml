@@ -1,6 +1,6 @@
-baseURL = 'https://cr78.gitlab.io/'
+baseURL = 'https://okunix.github.io/'
 languageCode = 'en-us'
-title = "yusuf's site"
+title = "okunix"
 
 [menus]
   [[ menus.main ]]
