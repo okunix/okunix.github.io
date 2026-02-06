@@ -32,4 +32,4 @@ title = "okunix"
 
 [markup]
   [markup.highlight]
-    style = 'tokyonight-moon'
+    style = 'catppuccin-frappe'
