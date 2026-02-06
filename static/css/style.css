@@ -12,7 +12,7 @@
 html {
   background-color: var(--background-color);
   color: var(--text-color);
-  max-width: 700px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 0;
   font-family:
@@ -160,6 +160,7 @@ footer {
 
 p code {
   background-color: var(--card-background);
+  white-space: pre;
   padding: 2px 4px;
   border-radius: 4px;
 }
